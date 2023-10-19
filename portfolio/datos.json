@@ -1,0 +1,17 @@
+[
+    {
+      "titulo": "Título de la creación 1",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    },
+    {
+      "titulo": "Título de la creación 2",
+      "descripcion": "Descripción de la creación 2",
+      "imagenes": ["imagen3.jpg", "imagen4.jpg"],
+      "fecha": "2023-10-20",
+      "url": "https://www.ejemplo.com/creacion2"
+    }
+  ]
+  

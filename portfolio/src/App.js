@@ -1,23 +1,27 @@
-// App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Sreens/Home';
-import Componente1 from './components/Componente1';
-import Componente2 from './components/Componente2';
+import Personal from './Sreens/Personal';
+import MisCreaciones from './Sreens/MisCreaciones';
+import Favoritos from './Sreens/Favoritos';
+import Layout from './Sreens/Layout';
+import './App.css';
+import Habilidades from './Sreens/Habilidades';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/componente1" component={Componente1} />
-          <Route path="/componente2" component={Componente2} />
-        </Switch>
-      </div>
-    </Router>
+    <BrowserRouter> 
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/habilidades" element={<Habilidades />} />
+          <Route path="/personal" element={<Personal />} />
+          <Route path="/misCreaciones" element={<MisCreaciones />} />
+          <Route path="/favoritos" element={<Favoritos />} />
+        </Route>
+      </Routes>
+  
+         </BrowserRouter> 
   );
 }
 

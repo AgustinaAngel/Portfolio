@@ -1,17 +1,25 @@
-// Navbar.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
+import logo from "../images/logo.png";
 
 const Navbar = () => {
+ 
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/componente1">Componente 1</Link></li>
-        <li><Link to="/componente2">Componente 2</Link></li>
-      </ul>
-    </nav>
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+<div class="container px-5">
+    <a class="navbar-brand" ><span class="fw-bolder text-primary">¡Hola! ¿Qurés conocerme?</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    
+    <div className="nav_side">
+        <Link to="/">Home</Link>
+        <Link to="/personal">¿Quién soy?</Link>
+        <Link to="/habilidades">Habilidades</Link>
+        <Link to="/misCreaciones">Mis creaciones</Link>
+        <Link to="/favoritos">Favoritos</Link>
+      </div>
+</div>
+</nav>
   );
-}
+};
 
 export default Navbar;
