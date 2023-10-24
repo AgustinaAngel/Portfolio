@@ -444,14 +444,6 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -11773,12 +11765,12 @@ html {
 
 .nav_side {
     display: flex;
-    align-items: center; /* Opcional: alinea verticalmente los elementos del menú */
+    align-items: center; 
   }
   
   .nav_side a {
-    margin-right: 20px; /* Espacio entre los elementos del menú (ajusta según tus necesidades) */
-    white-space: nowrap; /* Evita el salto de línea dentro de un enlace */
+    margin-right: 20px; 
+    white-space: nowrap; 
   }
   
 
@@ -11786,3 +11778,62 @@ html {
     margin-top: 10px !important;
     width: 100% !important;
   }
+
+  .altura{
+    height: 10rem;
+  }
+
+  .border-top {
+    border-top: 1px solid var(--bs-border-color)!important;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .justify-content-endOK{
+    justify-content: flex-end!important;
+
+  }
+
+  .d-flexOK{
+    display: flex!important;
+  }
+
+
+  .navOK {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #6c757d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.col-md-4OK {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.iconos{
+  height: 30px;
+  width: 30px;
+
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+  color: #6c757d!important;
+}
+
+
+.bi:hover{
+  color: #c8208f!important;
+}
