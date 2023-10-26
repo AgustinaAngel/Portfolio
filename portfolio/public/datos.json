@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "titulo": "Título de la creación 1",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    },
+    {
+      "id": 2,
+      "titulo": "Título de la creación 2",
+      "descripcion": "Descripción de la creación 2",
+      "imagenes": ["imagen3.jpg", "imagen4.jpg"],
+      "fecha": "2023-10-20",
+      "url": "https://www.ejemplo.com/creacion2"
+    },
+    {
+      "id": 3,
+      "titulo": "Título de la creación 3",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    },
+    {
+      "id": 4,
+      "titulo": "Título de la creación 1",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    },
+    {
+      "id": 5,
+      "titulo": "Título de la creación 1",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    },
+    {
+      "id": 6,
+      "titulo": "Título de la creación 1",
+      "descripcion": "Descripción de la creación 1",
+      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "fecha": "2023-10-19",
+      "url": "https://www.ejemplo.com/creacion1"
+    }
+  ]
+  
