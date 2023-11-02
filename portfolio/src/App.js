@@ -7,6 +7,7 @@ import Favoritos from './Sreens/Favoritos';
 import Layout from './Sreens/Layout';
 import './App.css';
 import Habilidades from './Sreens/Habilidades';
+import DetalleCreacion from './Sreens/DetalleCreacion';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Route path="/habilidades" element={<Habilidades />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/misCreaciones" element={<MisCreaciones />} />
+        
+          <Route path="/creacion/:id" element={<DetalleCreacion />} />
+
           <Route path="/favoritos" element={<Favoritos />} />
         </Route>
       </Routes>

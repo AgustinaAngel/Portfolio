@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import InfoClave from '../components/InfoClave';
 import Boton from '../components/Boton';
 import Personal from './Personal';
+import LimiteCreaciones from '../components/LimiteCreaciones';
 const Home = () => {
   return (
     <div>
@@ -43,7 +44,8 @@ const Home = () => {
         </div>
         
         <Personal className='personalHome'/>
-        
+
+        <LimiteCreaciones/>
       </div>
     
     </div>

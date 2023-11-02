@@ -14,6 +14,8 @@ function CardCreaciones({ productoCard }) {
     handleQuitar();
     setAdded(false);
   };*/}
+  console.log("este es id");
+  console.log(productoCard.id);
   return (
     <div className="card overflow-hidden shadow rounded-4 border-0 mb-5"  key={productoCard.id}>
       <div className="card-body p-0">
@@ -34,8 +36,7 @@ function CardCreaciones({ productoCard }) {
 
         <div className="card-footer text-right">
           
-          <Boton info1= "Ver más" link= {`/product/${productoCard.id}`} />
-
+          <Boton info1= "Ver más" link= {`/creacion/${productoCard.id}`} />
 
          {/**  {added
                     ? <button

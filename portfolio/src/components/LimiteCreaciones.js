@@ -1,21 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
-import CardCreaciones from "../components/CardCreaciones";
+import CardCreaciones from "./CardCreaciones";
 
-const MisCreaciones = () => {
-
-  const urlArchivoJSON = "../../datos.json";
+const LimiteCreaciones = () => {
+  const urlArchivoJSON = "../../datos.json?limit=6";
   const [creaciones, setCreaciones] = useState([]);
-
-  /*const { agregarCompra, eliminarCompra } = useContext(CarritoContext)
-
-const handleAgregar = (compra) =>{
-  agregarCompra(compra)
-}
-const handleQuitar = (id) =>{
-  eliminarCompra(id)
-}*/
 
   useEffect(() => {
     axios
@@ -35,17 +25,15 @@ const handleQuitar = (id) =>{
         <div className="container px-5 mb-5">
           <div className="text-center mb-5">
             <h1 className="display-5 fw-bolder mb-0">
-              <span className="text-gradient d-inline">Projects</span>
+              <span className="text-gradient d-inline">Proyectos Destacados</span>
             </h1>
           </div>
-          <div className="row gx-5 justify-content-center">
-            <div className="col-lg-11 col-xl-9 col-xxl-8">
-              <div>
-                {creaciones.map((creacion) => (
-                  <CardCreaciones key={creacion.id} productoCard={creacion} />
-                ))}
+          <div className="row gx-4 gx-lg-5">
+            {creaciones.map((creacion) => (
+              <div key={creacion.id} className="col-lg-6 mb-4">
+                <CardCreaciones productoCard={creacion} />
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -53,4 +41,4 @@ const handleQuitar = (id) =>{
   );
 };
 
-export default MisCreaciones;
+export default LimiteCreaciones;
