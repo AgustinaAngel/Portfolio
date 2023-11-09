@@ -7,6 +7,7 @@ const Favoritos = () => {
 
   return (
     <>
+
       {listaCreaciones.length > 0 ? (
         listaCreaciones.map((item) => (
           <div className="card-container margenArriba" key={item.id}>
@@ -39,7 +40,7 @@ const Favoritos = () => {
           </div>
         ))
       ) : (
-        <h2 className="text-gradient d-inline mensajeNoFavs">No tienes ningún favorito aún.</h2>
+        <h2 className="text-gradient d-inline mensajeNoFavs margenArriba">No tienes ningún favorito aún.</h2>
       )}
     </>
   );

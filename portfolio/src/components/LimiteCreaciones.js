@@ -2,22 +2,30 @@ import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import CardCreaciones from "./CardCreaciones";
-
+import { FavoritosContext } from '../context/FavoritosContext';
 const LimiteCreaciones = () => {
   const urlArchivoJSON = "../../datos.json?limit=6";
   const [creaciones, setCreaciones] = useState([]);
+  const { agregarCreacion, eliminarCreacion, listaCreaciones } = useContext(FavoritosContext)
 
+  const handleAgregar = (compra) =>{
+    agregarCreacion(compra)
+  }
+  const handleQuitar = (id) =>{
+    eliminarCreacion(id)
+  }
+  
   useEffect(() => {
     axios
-      .get(urlArchivoJSON)
-      .then((response) => {
-        const creacionesJSON = response.data;
-        setCreaciones(creacionesJSON);
-      })
-      .catch((error) => {
-        console.error("Error al obtener los datos:", error);
-      });
-  }, []);
+    .get(urlArchivoJSON)
+    .then((response) => {
+      const creacionesJSON = response.data;
+      setCreaciones(creacionesJSON);
+    })
+    .catch((error) => {
+      console.error("Error al obtener los datos:", error);
+    });
+}, []);
 
   return (
     <>
@@ -29,11 +37,18 @@ const LimiteCreaciones = () => {
             </h1>
           </div>
           <div className="row gx-4 gx-lg-5">
-            {creaciones.map((creacion) => (
-              <div key={creacion.id} className="col-lg-6 mb-4">
-                <CardCreaciones productoCard={creacion} />
-              </div>
-            ))}
+          
+
+
+
+{creaciones.map((creacion) => (
+    <div key={creacion.id} className="col-lg-6 mb-4">
+                  <CardCreaciones key={creacion.id} productoCard={creacion}   handleAgregar={() => handleAgregar(creacion)}
+                  handleQuitar={() => handleQuitar(creacion.id)}
+                  listaCreaciones={listaCreaciones}
+                    />
+                     </div>
+                ))}
           </div>
         </div>
       </section>
