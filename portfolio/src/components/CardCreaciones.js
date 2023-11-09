@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Boton from "./Boton";
+import StarIcon from '@mui/icons-material/Star';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
-function CardCreaciones({ productoCard }) {
-  const [added, setAdded] = useState(false);
+function CardCreaciones({ productoCard, handleAgregar, handleQuitar, listaCreaciones }) {
+  const [added, setAdded] = useState(listaCreaciones.some(c => c.id === productoCard.id));
 
- {/* const clickAgregar = () => {
-    handleAgregar();
-    setAdded(true);
-  };
+  const clickAgregar = () => {
+      handleAgregar()
+      setAdded(true)
+  }
   const clickQuitar = () => {
-    handleQuitar();
-    setAdded(false);
-  };*/}
+      handleQuitar()
+      setAdded(false)
+  }
   console.log("este es id");
   console.log(productoCard.id);
   return (
@@ -22,12 +24,12 @@ function CardCreaciones({ productoCard }) {
         <div className="d-flex align-items-center">
           <div className="p-5">
             <h2 className="fw-bolder">{productoCard.titulo}</h2>
-            <p>
+            <p className="descripcionCard">
             {productoCard.descripcion}
             </p>
           </div>
           <img
-            className="img-fluid"
+            className="img-fluid tamanioImg"
             src={productoCard.imagenes[0]} 
             alt="..."
           />
@@ -38,24 +40,23 @@ function CardCreaciones({ productoCard }) {
           
           <Boton info1= "Ver más" link= {`/creacion/${productoCard.id}`} />
 
-         {/**  {added
+          {added
                     ? <button
                         type="button"
                         className="boton-quitar"
                         onClick={clickQuitar}
 
                     >
-                        Quitar del Carrito X
+                        <StarIcon class="iconosFav biFavQ" color="action" />
                     </button>
                     : <button
                         type="button"
                         className="boton-agregar"
                         onClick={clickAgregar}
                     >
-                        Agregar Carrito
+                        <StarBorderIcon class="iconosFav biFavA" color="action" />
                     </button>
                 }
-                */}
         </div>
       </div>
     </div>

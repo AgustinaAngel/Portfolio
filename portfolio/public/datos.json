@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "titulo": "Título de la creación 1",
-      "descripcion": "Descripción de la creación 1",
-      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
-      "fecha": "2023-10-19",
+      "titulo": "DONAR+",
+      "descripcion": "Plataforma Web que ofrece nuevas oportunidades para realizar donaciones de manera segura y sencilla. Frente a la necesidad de 18 millones de personas en la Argentina viviendo en la pobreza y que las organizaciones sin fines de lucro no pueden satisfacer la gran demanda, surge DONAR+ con la misión de unir a personas solidarias con ONGs de una manera efectiva, superando los desafíos que impiden las donaciones frecuentes: la falta de conocimiento, distancia, tiempo y desconfianza. Esta plataforma web innovadora e intuitiva, permite a los donantes encontrar ONGs cercanas y campañas benéficas que necesitan su ayuda, buscando crear un impacto significativo y positivo en aquellos individuos que más lo necesitan.",
+      "imagenes": ["../images/DONAR.png", "../images/DONAR.png"],
+      "fecha": "2023-3-1",
       "url": "https://www.ejemplo.com/creacion1"
     },
     {
@@ -18,34 +18,34 @@
     {
       "id": 3,
       "titulo": "Título de la creación 3",
-      "descripcion": "Descripción de la creación 1",
-      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "descripcion": "Descripción de la creación 3",
+      "imagenes": ["imagen3.jpg", "imagen3.jpg"],
       "fecha": "2023-10-19",
-      "url": "https://www.ejemplo.com/creacion1"
+      "url": "https://www.ejemplo.com/creacion3"
     },
     {
       "id": 4,
-      "titulo": "Título de la creación 1",
-      "descripcion": "Descripción de la creación 1",
-      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "titulo": "Título de la creación 4 ",
+      "descripcion": "Descripción de la creación 4",
+      "imagenes": ["imagen4.jpg", "imagen4.jpg"],
       "fecha": "2023-10-19",
-      "url": "https://www.ejemplo.com/creacion1"
+      "url": "https://www.ejemplo.com/creacion4"
     },
     {
       "id": 5,
-      "titulo": "Título de la creación 1",
-      "descripcion": "Descripción de la creación 1",
-      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "titulo": "Título de la creación 5",
+      "descripcion": "Descripción de la creación 5",
+      "imagenes": ["imagen5.jpg", "imagen5.jpg"],
       "fecha": "2023-10-19",
-      "url": "https://www.ejemplo.com/creacion1"
+      "url": "https://www.ejemplo.com/creacion5"
     },
     {
       "id": 6,
-      "titulo": "Título de la creación 1",
-      "descripcion": "Descripción de la creación 1",
-      "imagenes": ["imagen1.jpg", "imagen2.jpg"],
+      "titulo": "Título de la creación 6",
+      "descripcion": "Descripción de la creación 6",
+      "imagenes": ["imagen6.jpg", "imagen6.jpg"],
       "fecha": "2023-10-19",
-      "url": "https://www.ejemplo.com/creacion1"
+      "url": "https://www.ejemplo.com/creacion6"
     }
   ]
   

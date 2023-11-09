@@ -11843,3 +11843,160 @@ html {
 }
 
 
+.tamañoTextoDetalle {
+
+
+  color: #000000 !important;
+  font-family: var(--bs-btn-font-family);
+  font-size: 58px;
+  font-weight: bold;
+
+}
+
+.textoDetalleTitulo {
+  color:  #c8208f !important;
+  font-family: var(--bs-btn-font-family);
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.textoDetalleDescripcion {
+  color:  #c8208f !important;
+  font-family: var(--bs-btn-font-family);
+  font-size: 28px;
+  text-align: center;
+
+}
+
+.imagenCentrada {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.detalle-producto {
+  margin-top: 25px;
+}
+.textoDetalleTitulo {
+  color:  #c8208f !important;
+  font-family: var(--bs-btn-font-family);
+  font-size: 58px;
+  font-weight: bold;
+}
+.margen-centralizado {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  /* Ajusta este valor según tus preferencias */
+}
+
+.imagenCentrada {
+  display: block;
+  margin: 0 auto;
+}
+
+.tamanioImg{
+  width: 35%!important;
+  height: auto!important;
+}
+.boton-agregar{
+  width: 60px;
+  height: 60px;
+  background-color: #fff !important;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #c8208f !important;
+}
+.boton-agregar:hover {
+  background-color: #fff !important;
+
+  border-color: rgb(190, 0, 63) !important;
+  box-shadow:
+      inset 0 -2em 2em rgba(0, 0, 0, 0.1),
+      0 0 0 2px #ffffff,
+      0.3em 0.3em 3em rgba(0, 0, 0, 0.1);
+
+}
+
+.boton-quitar{
+  width: 60px;
+  height: 60px;
+  background-color: #c8208f !important;
+  text-align: center;
+  border-radius: 10px;
+ 
+  border-color: #c8208f !important;
+  transition: background-color .3s;
+ 
+}
+.boton-quitar:hover {
+  background-color: #fff !important;
+  border-color: rgb(190, 0, 63) !important;
+
+  box-shadow:
+      inset 0 -2em 2em rgba(0, 0, 0, 0.1),
+      0 0 0 2px #ffffff,
+      0.3em 0.3em 3em rgba(0, 0, 0, 0.1);
+
+}
+
+
+.iconosFav{
+  height: 30px;
+  width: 30px;
+
+
+}
+
+
+.biFavQ {
+  fill: currentColor;
+  color: #fff!important;
+}
+
+
+.biFavQ:hover{
+  color: #6c757d!important;
+}
+
+
+
+.biFavA {
+  fill: currentColor;
+  color: #6c757d!important;
+}
+
+
+.descripcionCard{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  max-height: 400px; 
+  
+}
+
+
+.card-container {
+  margin: 0 450px; /* Ajusta el valor de los márgenes según tus preferencias */
+}
+
+.margenArriba{
+  margin-top: 50px;
+}
+
+.tablaCamInfo{
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
+  font-size: 16px !important;
+  width: 160px;
+  height: 60px;
+  
+}
+
+.mensajeNoFavs{
+  margin-top: 20% !important;
+  margin: 0 30%; /* Ajusta el valor de los márgenes según tus preferencias */
+}

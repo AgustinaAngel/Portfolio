@@ -4,20 +4,25 @@ import { useParams } from 'react-router-dom';
 import axios from "axios";
 
 function DetalleCreacion() {
- const urlArchivoJSON = "../../datos.json";
+ const urlArchivoJSON = "/datos.json";
  const { id } = useParams(); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [creacion, setCreacion] = useState(null);
 
   useEffect(() => {
-    console.log(id); // Añade esta línea para verificar el valor de id
+    console.log(id);
     if (id) {
-      // Realiza la solicitud Axios solo si id tiene un valor válido
-      axios.get(urlArchivoJSON+ "/search?q="+ id)
-        .then((creacion) => {
-          setCreacion(creacion);
-          setLoading(false);
+      
+      axios.get(urlArchivoJSON)
+        .then((creaciones) => {
+
+          let filtro = creaciones.data.filter(item=>item.id==id);
+
+          if(filtro.length>0){
+            setCreacion(filtro[0]);
+            setLoading(false);
+          }
         })
         .catch((error) => {
           console.error('Error al obtener los detalles del producto', error);
@@ -46,8 +51,8 @@ function DetalleCreacion() {
     <div className="detalle-producto">
         <div className='margen-centralizado'>
       <div className='margen-superior'>
-        <h2 className='textoDetalleTitulo'>{creacion.titulo}</h2>
-      <img className='imagenCentrada' src={creacion.imagenes[0]} alt={creacion.titulo} />
+        <h2 className='textoDetalleTitulo'>{creacion.titulo} <h5>{creacion.fecha}</h5></h2>
+      <img className='imagenCentrada ' src={creacion.imagenes[0]} alt={creacion.titulo} />
       <p className='textoDetalleDescripcion'>{creacion.descripcion}</p>
     </div> </div> </div>
   );

@@ -7,10 +7,12 @@ import Favoritos from './Sreens/Favoritos';
 import Layout from './Sreens/Layout';
 import './App.css';
 import Habilidades from './Sreens/Habilidades';
+import FavoritosProvider from './context/FavoritosContext';
 import DetalleCreacion from './Sreens/DetalleCreacion';
 
 function App() {
   return (
+    <FavoritosProvider>
     <BrowserRouter> 
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -22,10 +24,12 @@ function App() {
           <Route path="/creacion/:id" element={<DetalleCreacion />} />
 
           <Route path="/favoritos" element={<Favoritos />} />
+          
         </Route>
       </Routes>
   
          </BrowserRouter> 
+         </FavoritosProvider> 
   );
 }
 

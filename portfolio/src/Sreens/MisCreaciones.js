@@ -2,20 +2,22 @@ import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import CardCreaciones from "../components/CardCreaciones";
+import { FavoritosContext } from '../context/FavoritosContext';
 
 const MisCreaciones = () => {
 
   const urlArchivoJSON = "../../datos.json";
+ 
   const [creaciones, setCreaciones] = useState([]);
 
-  /*const { agregarCompra, eliminarCompra } = useContext(CarritoContext)
+const { agregarCreacion, eliminarCreacion, listaCreaciones } = useContext(FavoritosContext)
 
 const handleAgregar = (compra) =>{
-  agregarCompra(compra)
+  agregarCreacion(compra)
 }
 const handleQuitar = (id) =>{
-  eliminarCompra(id)
-}*/
+  eliminarCreacion(id)
+}
 
   useEffect(() => {
     axios
@@ -42,7 +44,10 @@ const handleQuitar = (id) =>{
             <div className="col-lg-11 col-xl-9 col-xxl-8">
               <div>
                 {creaciones.map((creacion) => (
-                  <CardCreaciones key={creacion.id} productoCard={creacion} />
+                  <CardCreaciones key={creacion.id} productoCard={creacion}   handleAgregar={() => handleAgregar(creacion)}
+                  handleQuitar={() => handleQuitar(creacion.id)}
+                  listaCreaciones={listaCreaciones}
+                    />
                 ))}
               </div>
             </div>
