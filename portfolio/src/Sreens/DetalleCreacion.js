@@ -2,6 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import '../App.css';
 import { useParams } from 'react-router-dom';
 import axios from "axios";
+import { FavoritosContext } from '../context/FavoritosContext';
+import StarIcon from '@mui/icons-material/Star';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 function DetalleCreacion() {
  const urlArchivoJSON = "/datos.json";
@@ -9,6 +12,7 @@ function DetalleCreacion() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [creacion, setCreacion] = useState(null);
+  const { agregarCreacion, eliminarCreacion, listaCreaciones } = useContext(FavoritosContext);
 
   useEffect(() => {
     console.log(id);
@@ -54,7 +58,19 @@ function DetalleCreacion() {
         <h2 className='textoDetalleTitulo'>{creacion.titulo} <h5>{creacion.fecha}</h5></h2>
       <img className='imagenCentrada ' src={creacion.imagenes[0]} alt={creacion.titulo} />
       <p className='textoDetalleDescripcion'>{creacion.descripcion}</p>
-    </div> </div> </div>
+    </div> 
+    
+    
+    {listaCreaciones.some((c) => c.id === creacion.id) ? (
+          <button type="button" className="boton-quitar" onClick={() => eliminarCreacion(creacion.id)}>
+            <StarIcon class="iconosFav biFavQ" color="action" />
+          </button>
+        ) : (
+          <button type="button" className="boton-agregar" onClick={() => agregarCreacion(creacion)}>
+            <StarBorderIcon class="iconosFav biFavA" color="action" />
+          </button>
+        )}
+    </div> </div>
   );
 }
 
