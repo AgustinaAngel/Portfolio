@@ -14,25 +14,25 @@ const Habilidades = () => {
                 </div>
                 <h3 className="fw-bolder mb-0">
                   <span className="text-gradient d-inline">
-                    Professional Skills
+                   Habilidades
                   </span>
                 </h3>
               </div>
               <div className="row row-cols-1 row-cols-md-3 mb-4">
-                <MiniCardHabilidades info= "SEO/SEM Marketing"/>
-                <MiniCardHabilidades info= "Statistical Analysis"/>
+                <MiniCardHabilidades info= "UX / UI"/>
+                <MiniCardHabilidades info= "Analisis de datos"/>
                 <div className="col">
                   <div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                    Web Development
+                    Diseño y desarrollo Web
                   </div>
                 </div>
               </div>
               <div className="row row-cols-1 row-cols-md-3">
-              <MiniCardHabilidades info= "Network Security"/>
-              <MiniCardHabilidades info= " Adobe Software Suite"/>
+              <MiniCardHabilidades info= "SQL Server"/>
+              <MiniCardHabilidades info= "Trabajo en equipo"/>
                 <div className="col">
                   <div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                    User Interface Design
+                     Diseño y desarrollo Mobile
                   </div>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const Habilidades = () => {
                   <i className="biH bi-code-slash"></i>
                 </div>
                 <h3 className="fw-bolder mb-0">
-                  <span className="text-gradient d-inline">Languages</span>
+                  <span className="text-gradient d-inline">Lenguajes</span>
                 </h3>
               </div>
               <div className="row row-cols-1 row-cols-md-3 mb-4">
@@ -53,13 +53,13 @@ const Habilidades = () => {
         
                 <div className="col">
                   <div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                    JavaScript
+                    React.js / React Native
                   </div>
                 </div>
               </div>
               <div className="row row-cols-1 row-cols-md-3">
-              <MiniCardHabilidades info= "Python"/>
-              <MiniCardHabilidades info= "Ruby"/>
+              <MiniCardHabilidades info= "MVC"/>
+              <MiniCardHabilidades info= "C#"/>
                 <div className="col">
                   <div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                     Node.js

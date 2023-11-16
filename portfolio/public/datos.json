@@ -9,10 +9,10 @@
     },
     {
       "id": 2,
-      "titulo": "Título de la creación 2",
-      "descripcion": "Descripción de la creación 2",
-      "imagenes": ["imagen3.jpg", "imagen4.jpg"],
-      "fecha": "2023-10-20",
+      "titulo": "Reportalo",
+      "descripcion": "Frnte a la problematica del descontrol de las calles y las quejas que presentan las personas que a diario, asi como veredas rotas, rampas bloqueadas y tachos de basura desbordadados, decidimos desarrollar una aplicación llamada Reportalo que tiene el objetivo de hacer de las calles de la ciudad un lugar mejor mediante la ayuda de todos los vecinos que la utilizan. Esta app garantiza mayor seguridad en la zona, y mantiene informado al usuario en todo momento del estado de las calles, brindando la mayor atención a aquellos vecinos que les gusta estar actualizados sobre lo que sucede en el barrio. ",
+      "imagenes": ["../images/logoReportalo.png", "../images/logoReportalo.png"],
+      "fecha": "2022-11-1",
       "url": "https://www.ejemplo.com/creacion2"
     },
     {
